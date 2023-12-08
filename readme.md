@@ -21,6 +21,7 @@ To test authentication routes
 
 go to postman/thunder Client
 ## For login 
+
 ``POST http://localhost:8000/api/v1/auth/login``
 login should be in this format
 ```
