@@ -1,9 +1,26 @@
-Authentication routes
+
+## Quiz Server 
+
+
+to run the server
+
+``npm install``
+``nodemon index.js``
+
+
+create .env file and assign values of
+PORT=5000
+DATABASE_URL="your mongodb url"
+ACCESS_TOKEN_SECRET="any combination of numbers letter"
+REFRESH_TOKEN_SECRET="any combination of numbers letter "
+
+
+## Authentication routes
 
 To test authentication routes
 
 go to postman/thunder Client
-For login 
+## For login 
 ``POST http://localhost:8000/api/v1/auth/login``
 login should be in this format
 ```
