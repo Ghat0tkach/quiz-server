@@ -27,8 +27,12 @@ const userSchema=mongoose.Schema({
     minLength:[6, "PLease make sure your password is min 6 characters long "],
     maxLength:[64, "PLease make sure your password is max 64 characters long"]   
 },
+badges:{
+    type:Array,
+},
 points:{
     type:Number,
+    default:-1,
 
 }
 },

@@ -83,3 +83,36 @@ Questions are in management.js[edit the question to upload them]
 ``GET http://localhost:8000/api/v1/question/management``
 
 ``DELETE http://localhost:8000/api/v1/question/management``
+
+ ## To post aptitude questions
+
+Questions are in aptitude.js [edit the question to upload them]
+
+``POST http://localhost:8000/api/v1/question/aptitude``
+
+## To view and delete
+``GET http://localhost:8000/api/v1/question/aptitude``
+
+``DELETE http://localhost:8000/api/v1/question/aptitude``
+
+## To post general_awareness questions
+
+Questions are in general_awareness.js [edit the question to upload them]
+
+``POST http://localhost:8000/api/v1/question/general``
+
+## To view and delete
+``GET http://localhost:8000/api/v1/question/general``
+
+``DELETE http://localhost:8000/api/v1/question/general``
+
+## To post sports questions
+
+Questions are in sports.js [edit the question to upload them]
+
+``POST http://localhost:8000/api/v1/question/sports``
+
+## To view and delete
+``GET http://localhost:8000/api/v1/question/sports``
+
+``DELETE http://localhost:8000/api/v1/question/sports``

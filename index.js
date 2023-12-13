@@ -50,7 +50,7 @@ mongoose.connect(DATABASE_URL,{
 
 //start server
 let server;
-server= app.listen(8000,()=>{
+server= app.listen(PORT,()=>{
     console.log(`Server has started on port ${PORT}`)
 });
 
