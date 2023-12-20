@@ -26,22 +26,22 @@ export const updatePointsAndTimestamps = async(req,res,next)  => {
   }
 };
 
-export const getUserDetails = async (req,res,next) => {
-    const {userId}=req.body;
+export const getUserDetails = async (req, res, next) => {
+    const { userId } = req.params; // Extract user ID from URL parameter
     try {
-      // Find the user by ID and exclude the password field
-      const user = await UserModel.findById(userId).select('-password');
-  
-      // Check if the user exists
-      if (!user) {
-        throw createHttpError.BadRequest('User not found.');
-      }
-  
-      // Return the details excluding the password field
-      res.json(user)
-      return user;
+        // Find the user by ID and exclude the password field
+        const user = await UserModel.findById(userId).select('-password');
+
+        // Check if the user exists
+        if (!user) {
+            throw createHttpError.BadRequest('User not found.');
+        }
+
+        // Return the details excluding the password field
+        res.json(user);
+        
     } catch (error) {
-      // Handle any errors that occur during the retrieval
-      throw error;
+        // Handle any errors that occur during the retrieval
+        throw error;
     }
-  };
+};

@@ -3,6 +3,6 @@ import { getUserDetails, updatePointsAndTimestamps } from "../controllers/finali
 const router=express.Router();
 
 router.route("/save").post(updatePointsAndTimestamps);
-router.route("/getUser").get(getUserDetails);
+router.route("/getUser/:userId").get(getUserDetails);
 export default router;
 
