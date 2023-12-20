@@ -1,5 +1,5 @@
 import createHttpError from 'http-errors';
-import { UserModel } from '../models';
+import { UserModel } from '../models/index.js';
 
 
 export const updatePointsAndTimestamps = async (userId, points, timestamps) => {
