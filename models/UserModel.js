@@ -34,6 +34,10 @@ points:{
     type:Number,
     default:-1,
 
+},
+timestamps:{
+    type:Number,
+    default:-1,
 }
 },
 {
