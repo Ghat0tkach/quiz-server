@@ -35,7 +35,7 @@ points:{
     default:-1,
 
 },
-timestamps:{
+timeElapsed:{
     type:Number,
     default:-1,
 }

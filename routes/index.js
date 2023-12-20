@@ -6,7 +6,7 @@ const router=express.Router();
 
 router.use("/auth",authRoutes)
 router.use("/question",questionRoutes)
-router.use("/",saveRoutes)
+router.use("/final",saveRoutes)
 //http://localhost:8000/auth/register
 // router.use("/conversation",conversationRoutes)
 // router.use("/message", messageRoutes)
